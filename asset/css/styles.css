@@ -691,6 +691,8 @@ button {
 .testimonial__list {
   margin-top: 70px;
   display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .testimonial__item__mess {
@@ -854,6 +856,10 @@ button {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.66667; /* 166.667% */
+}
+
+.blog__item__title:hover {
+  cursor: pointer;
 }
 
 .blog__item__link {
