@@ -1053,6 +1053,7 @@ button {
   justify-content: center;
   margin-top: 28px;
   padding: 28px 0;
+  padding-left: 15px;
   background: var(--primary-color);
   color: #fff;
   text-align: center;
