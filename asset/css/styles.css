@@ -257,7 +257,7 @@ button {
   flex-direction: column;
   position: absolute;
   content: "";
-  right: 0;
+  right: 15px;
   top: 127px;
   height: 130px;
   width: 130px;
@@ -511,7 +511,7 @@ button {
   height: 120px;
   position: absolute;
   bottom: -65px;
-  right: 0;
+  right: 15px;
   border-radius: 1.6rem;
   background: #439f90;
   display: flex;
@@ -544,7 +544,7 @@ button {
   align-items: center;
   gap: 14px;
   top: -48px;
-  right: 0;
+  right: 15px;
   padding: 23px 13px;
   width: 276px;
   border-radius: 1.2rem;
@@ -695,6 +695,15 @@ button {
   overflow: hidden;
 }
 
+.testimonial__item {
+  width: calc(50% - 15px);
+  flex-shrink: 0;
+}
+
+.testimonial__item + .testimonial__item {
+  margin-left: 30px;
+}
+
 .testimonial__item__mess {
   position: relative;
   padding: 48px 28px;
@@ -809,6 +818,7 @@ button {
 }
 
 .blog-top {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -817,7 +827,7 @@ button {
   margin-top: 98px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px 58px;
+  gap: 30px;
 }
 
 .blog__item {
@@ -880,17 +890,22 @@ button {
 .cta {
   margin-top: 160px;
 }
-.cta-content,
+
 .cta__inner {
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
   border-radius: 2.4rem;
   background: var(--primary-color);
   padding: 100px 0;
+  /* margin: 0 15px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content {
+  width: 100%;
 }
 
 .cta_title,
@@ -1034,6 +1049,8 @@ button {
 }
 
 .footer__coppy {
+  display: flex;
+  justify-content: center;
   margin-top: 28px;
   padding: 28px 0;
   background: var(--primary-color);
