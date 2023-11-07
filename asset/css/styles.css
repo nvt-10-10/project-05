@@ -45,11 +45,6 @@ button {
   font-family: inherit;
 }
 
-/* .container {
-  width: 1170px;
-  max-width: calc(100% - 48px);
-  margin: 0 auto;
-} */
 .section-title {
   display: flex;
   align-items: center;
@@ -538,6 +533,10 @@ button {
   font-weight: 600;
 }
 
+.media__send-money__info {
+  width: 100%;
+}
+
 .media__send-money {
   position: absolute;
   display: flex;
@@ -643,6 +642,7 @@ button {
   right: -74px;
   bottom: 57px;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .payment-method__title {
@@ -660,8 +660,9 @@ button {
 }
 
 .payment-method__item {
-  width: 63px;
-  height: 48px;
+  width: 100%;
+  /* width: 63px;
+  height: 48px; */
   display: block;
   object-fit: cover;
 }
@@ -825,9 +826,7 @@ button {
 
 .blog__list {
   margin-top: 98px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 30px 0;
 }
 
 .blog__item {
@@ -1043,7 +1042,9 @@ button {
 .footer__contact {
   margin-top: 54px;
 }
-
+.footer__contact__email {
+  padding-left: 15px;
+}
 .footer__contact__tel {
   margin-left: 100px;
 }

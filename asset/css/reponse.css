@@ -1,0 +1,143 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 56%;
+  }
+  body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: var(--primary-color-bg);
+    /* font-family: "Libre Bodoni", serif; */
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+  }
+  /* hero */
+  .hero {
+    margin-top: 50px;
+  }
+  .hero__img {
+    width: 222px;
+    height: 421.5px;
+  }
+
+  .media__interest {
+    width: 120px;
+    height: 120px;
+  }
+  .media__deposite {
+    top: 84.75px;
+    right: 297px;
+    padding: 10px 8px;
+  }
+
+  .media__secured-funds {
+    padding: 13px 10px;
+  }
+  .cta-icon:nth-of-type(4) {
+    bottom: 49px;
+    right: 30px;
+  }
+
+  .cta-icon:nth-of-type(2) {
+    bottom: 49px;
+    left: 30px;
+  }
+
+  /*  */
+  .works__media__thumb {
+    width: 352.5px;
+    height: 412.5px;
+  }
+  .works__media__img {
+    width: 342px;
+    height: 464.25px;
+  }
+
+  .works__list {
+    margin-top: 25px;
+    gap: 15px;
+  }
+
+  .media__card {
+    top: 72.25px;
+    right: 73.25px;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* feature */
+  .blog,
+  .cta,
+  .feature {
+    margin-top: 100px;
+  }
+  .feature__img {
+    width: 361.5px;
+    height: 241.5px;
+  }
+
+  .media__send-money {
+    width: 220px;
+    padding: 12px 8px;
+  }
+
+  .media__income {
+    padding: 20px;
+    width: 110px;
+    height: 110px;
+    right: 25px;
+    bottom: -55px;
+  }
+
+  /* .feature-2 */
+  .feature-2__thumb {
+    width: 352.5px;
+    height: 324px;
+  }
+  .feature-2__img {
+    width: 309.75px;
+    height: 450px;
+  }
+  .payment-method {
+    right: 30px;
+    bottom: 50px;
+    padding: 15px;
+  }
+
+  .payment-method__list {
+    margin-top: 15px;
+    gap: 12px;
+  }
+
+  .payment-method__item {
+    width: 95%;
+  }
+
+  .feature-2-icon {
+    bottom: 170px;
+    right: 0;
+  }
+
+  /* footer */
+  .footer-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-column:nth-last-of-type(1) {
+    grid-column: span 2;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
