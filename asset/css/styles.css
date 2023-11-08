@@ -97,6 +97,21 @@ button {
   cursor: pointer;
   opacity: 0.8;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+/* =
 
 /* header */
 
@@ -694,15 +709,16 @@ button {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
+  align-items: end;
 }
 
 .testimonial__item {
-  width: calc(50% - 15px);
+  width: calc(50% - var(--spacer) / 2);
   flex-shrink: 0;
 }
 
 .testimonial__item + .testimonial__item {
-  margin-left: 30px;
+  margin-left: var(--spacer);
 }
 
 .testimonial__item__mess {
@@ -923,7 +939,7 @@ button {
   gap: 16px;
 }
 
-.blog-action__img {
+.cta-action__img {
   width: 182px;
   height: 64px;
   flex-shrink: 0;

@@ -307,6 +307,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
+    --spacer: 20px;
     max-width: calc(720px + var(--spacer));
   }
 
