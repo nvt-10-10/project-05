@@ -713,7 +713,7 @@ button {
 }
 
 .testimonial__item {
-  width: calc(50% - var(--spacer) / 2);
+  width: calc(50% - var(--spacer) / 2) !important;
   flex-shrink: 0;
 }
 
